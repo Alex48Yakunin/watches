@@ -1,0 +1,88 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-flow: column;
+}
+
+.form {
+  display: flex;
+}
+
+.form__item {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: column;
+}
+
+.form__item+.form__item {
+  margin-left: 40px;
+}
+
+.form__input {
+  height: 40px;
+  width: 300px;
+  font-size: 18px;
+
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.form__label {
+  padding-left: 10px;
+}
+
+.form__btn {
+  height: 40px;
+  width: 150px;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+.clock-wrap {
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.time {
+  margin: 15px;
+  padding: 20px;
+  width: 130px;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.time__city {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.time__date {
+  font-size: 24px;
+  font-weight: 500;
+
+  margin-bottom: 10px;
+}
+
+.time__remove {
+  border: none;
+  box-shadow: none;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  margin-top: auto;
+  cursor: pointer;
+  background: url(./img/cancel.png) center center / contain no-repeat;
+}
